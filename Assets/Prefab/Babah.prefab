@@ -96,6 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089627ae9a785e041b0223111c068174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 0}
+  panelGameOver: {fileID: 0}
 --- !u!1 &3455383875837548320
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,9 +107,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4784926139743754686}
-  - component: {fileID: 4882249396180723066}
-  - component: {fileID: 2888058432668992361}
   - component: {fileID: 3922116975021339873}
+  - component: {fileID: 6230850149122825434}
+  - component: {fileID: 537374880406311501}
   m_Layer: 0
   m_Name: Babah
   m_TagString: bomb
@@ -133,28 +135,21 @@ Transform:
   - {fileID: 1182366036725220454}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &4882249396180723066
-Animator:
-  serializedVersion: 5
+--- !u!114 &3922116975021339873
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3455383875837548320}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: df03c690c77c5a942a062b3ee9826f99, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!135 &2888058432668992361
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 089627ae9a785e041b0223111c068174, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 0}
+  panelGameOver: {fileID: 0}
+--- !u!135 &6230850149122825434
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -173,9 +168,9 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.24853088
-  m_Center: {x: 0.029545113, y: -0.16277854, z: -0.006688103}
---- !u!114 &3922116975021339873
+  m_Radius: 0.27565408
+  m_Center: {x: -0.0013034344, y: 0.29146093, z: 0}
+--- !u!114 &537374880406311501
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,6 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 089627ae9a785e041b0223111c068174, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 5340085569825856276, guid: 12cb3ff0afa6e624db1200bd919753a3, type: 3}
+  panelGameOver: {fileID: 7347742068791815378, guid: 579995b67870c2c4e814e62995b8481c, type: 3}
 --- !u!1 &5345465836342720044
 GameObject:
   m_ObjectHideFlags: 0
