@@ -4,17 +4,21 @@ using UnityEngine.Events;
 public class Bomba : MonoBehaviour
 {
     public GameObject explosionPrefab;
-    public GameObject panelGameOver;
-    public UnityEvent blowUp;
-
+    public UnityEvent playAnimation;
 
     private void OnTriggerEnter(Collider other)
     {
           if (other.CompareTag("Player"))
         {
             Instantiate(explosionPrefab, transform.position, transform.rotation);
-            blowUp.Invoke();
-            panelGameOver.SetActive(true);
+            Invoke("Animation",1f);
+            FindObjectOfType<GameManager>().GameOver();
         }
     }
+    public void Animation()
+    {
+        playAnimation.Invoke();
+    }
+
+
 }

@@ -97,7 +97,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 0}
-  panelGameOver: {fileID: 0}
 --- !u!1 &3455383875837548320
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,7 +106,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4784926139743754686}
-  - component: {fileID: 3922116975021339873}
   - component: {fileID: 6230850149122825434}
   - component: {fileID: 537374880406311501}
   m_Layer: 0
@@ -135,20 +133,6 @@ Transform:
   - {fileID: 1182366036725220454}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3922116975021339873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3455383875837548320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 089627ae9a785e041b0223111c068174, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 0}
-  panelGameOver: {fileID: 0}
 --- !u!135 &6230850149122825434
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -183,7 +167,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 5340085569825856276, guid: 12cb3ff0afa6e624db1200bd919753a3, type: 3}
-  panelGameOver: {fileID: 7347742068791815378, guid: 579995b67870c2c4e814e62995b8481c, type: 3}
 --- !u!1 &5345465836342720044
 GameObject:
   m_ObjectHideFlags: 0

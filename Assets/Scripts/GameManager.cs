@@ -1,20 +1,34 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI coinText;
+    public Player player;
+    public GameObject panel;
     private int _coinsCount;
-    // Start is called before the first frame update
-    void Start()
+
+    public void Play()
     {
-        
+        Restart();
+
+    }
+    public void Pause()
+    {
+        Time.timeScale = 0f;
+        player.enabled = false;
+    }
+    public void GameOver()
+    {
+        panel.SetActive(true);
+
+        Pause();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Restart()
     {
-        
+        player.enabled = true;
     }
 
     public void AddCoin()
